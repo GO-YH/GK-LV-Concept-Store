@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GK LV Concept Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button class="menu">&#9776;</button>
+        <h1>GK LV Concept Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">LATEST NEWS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="news">
+            <h2>Timeless Meets Trend - Discover What's New.</h2>
+            <p>In every thread, in every fabric — our elegance is woven within.</p>
+            <p><a href="#">DISCOVER MORE</a></p>
+        </section>
+
+        <section class="slogan">
+            <blockquote>"Inspired by movement, shaped by elegance,<br>and designed for those who seek more than fashion
+                <br> — this is GK LV Concept Store."</blockquote>
+        </section>
+
+        <section class="shop">
+            <img src="images/shop.png" alt="GK LV Concept Store">
+            <div class="info">
+                <h2>Grand Opening on 11th June!</h2>
+                <p>Enjoy the comfort that clothing brings you</p>
+                <p>Sunway Carnival Mall, Ground Floor</p>
+            </div>
+        </section>
+
+        <section class="product">
+            <div>
+                <img src="images/lv_clothes1.png" alt="Embroidered Varsity Blouson">
+                <h3>Louis Vuitton Embroidered Varsity Blouson</h3>
+                <p>The blue wool body and fine grained,<br>dark grey Epi leather sleeves are embellished<br>with bold embroidered signatures in electric green and white.</p>
+                <form action="purchase.php" method="POST">
+                    <input type="hidden" name="product" value="Louis Vuitton Embroidered Varsity Blouson">
+                    <button type="submit" class="buy-now button">Buy Now</button>
+                </form>
+            </div>
+            <div>
+                <img src="images/lv_clothes2.png" alt="Cotton Jersey Varsity Blouson">
+                <h3>Cotton Jersey Varsity Blouson</h3>
+                <p>Sophisticated iridescent ribbing adorns the upper sleeves, collar, and waist,<br>while an embroidered white Marque L.<br>Vuitton Déposée on the chest and pearl-effect buttons add a dandy twist.</p>
+                <form action="purchase.php" method="POST">
+                    <input type="hidden" name="product" value="Cotton Jersey Varsity Blouson">
+                    <button type="submit" class="buy-now button">Buy Now</button>
+                </form>
+            </div>
+            <div>
+                <img src="images/lv_clothes3.png" alt="Cotton Signature Crewneck">
+                <h3>Cotton Signature Crewneck</h3>
+                <p>This comfortable black cotton crewneck features a studded LV Vers signature from the SS24 Show,<br>which is applied across the chest and incorporates an embroidered Monogram Flower.</p>
+                <form action="purchase.php" method="POST">
+                    <input type="hidden" name="product" value="Cotton Signature Crewneck">
+                    <button type="submit" class="buy-now button">Buy Now</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>® 2009 GK LV Concept Store All Right Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuButton = document.querySelector('.menu');
+            const nav = document.querySelector('nav ul');
+            
+            menuButton.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
